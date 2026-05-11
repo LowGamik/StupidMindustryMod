@@ -1,0 +1,59 @@
+{
+    "type": "ItemTurret",
+    "category": "turret",
+    "name": "Stationary Artillery Cannon",
+    "description": "A longrange artillery cannon that shoots powerfull AoE shells with slow fire rate, shoots only pyratite or blast compound",
+    "health": "350",
+    "size": 2,
+    "requirements": [
+        {"item": "copper", "amount": 500},
+        {"item": "silicon", "amount": 100},
+        {"item": "graphite", "amount": 200}
+    ],
+    "range": 450,
+    "minRange": 80,
+    "reload": 180,
+    "shootCone": 360,
+    "rotateSpeed": 2,
+    "targetAir": false,
+    "targetGround": true,
+    "shootShake": 2.0,
+    "shootEffect": "shootBig",
+    "smokeEffect": "smoke",
+    "shootSound": "artillery",
+    "alwaysUnlocked": true,
+    "maxAmmo": 6,
+    "shootType": {
+        "type": "ArtilleryBulletType",
+        "damage": 200,
+        "splashDamage": 200,
+        "splashDamageRadius": 40,
+        "lifetime": 60,
+        "speed": 3,
+        "hitEffect": "blastExplosion"
+    },
+    "ammoTypes":{
+        "pyratite":{
+            "type": "ArtilleryBulletType",
+            "damage": 180,
+            "splashDamage": 180,
+            "splashDamageRadius": 40,
+            "status": "burning",
+            "statusDuration": 300,
+            "speed": 3,
+            "hitEffect": "explosion",
+            "despawnEffect": "explosion"
+        },
+        "blast-compound":{
+            "type": "ArtilleryBulletType",
+            "damage": 350,
+            "splashDamage": 350,
+            "splashDamageRadius": 80,
+            "status": "blasted",
+            "statusDuration": 60,
+            "speed": 3,
+            "hitEffect": "explosion",
+            "despawnEffect": "explosion"
+        }
+    }
+}
