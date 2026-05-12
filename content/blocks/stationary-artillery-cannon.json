@@ -2,38 +2,45 @@
     "type": "ItemTurret",
     "category": "turret",
     "name": "Stationary Artillery Cannon",
-    "description": "A longrange artillery cannon that shoots powerfull AoE shells with slow fire rate, shoots only pyratite or blast compound",
-    "health": "350",
+    "description": "A longrange artillery cannon that shoots powerfull AoE shells with slow fire rate.",
+    "health": 350,
     "size": 2,
     "requirements": [
         {"item": "copper", "amount": 500},
-        {"item": "silicon", "amount": 100},
-        {"item": "graphite", "amount": 200}
+        {"item": "silicon", "amount": 200},
+        {"item": "graphite", "amount": 200},
+        {"item": "plastanium", "amount": 100}
     ],
+    "drawer": {
+        "type": "DrawTurret",
+        "base": "block-2",
+        "parts":[
+            {
+                "type": "RegionPart",
+                "suffix": "-turret",
+                "mirror": false,
+                "outline": true,
+                "y": 8.0,
+                "progress": "recoil",
+                "moveY": -3.0
+            }
+        ]
+    },
     "range": 450,
     "minRange": 80,
+    "shootY": 18,
     "reload": 180,
-    "shootCone": 360,
+    "shootCone": 5,
     "rotateSpeed": 2,
     "targetAir": false,
     "targetGround": true,
-    "shootShake": 2.0,
-    "shootEffect": "shootBig",
-    "smokeEffect": "smoke",
+    "shootShake": 3.0,
     "shootSound": "artillery",
     "alwaysUnlocked": true,
     "maxAmmo": 6,
-    "shootType": {
-        "type": "ArtilleryBulletType",
-        "damage": 200,
-        "splashDamage": 200,
-        "splashDamageRadius": 40,
-        "lifetime": 60,
-        "speed": 3,
-        "hitEffect": "blastExplosion"
-    },
-    "ammoTypes":{
-        "pyratite":{
+    "inaccuracy": 2,
+    "ammoTypes": {
+        "pyratite": {
             "type": "ArtilleryBulletType",
             "damage": 180,
             "splashDamage": 180,
@@ -41,10 +48,11 @@
             "status": "burning",
             "statusDuration": 300,
             "speed": 3,
+            "lifetime": 150,
             "hitEffect": "explosion",
             "despawnEffect": "explosion"
         },
-        "blast-compound":{
+        "blast-compound": {
             "type": "ArtilleryBulletType",
             "damage": 350,
             "splashDamage": 350,
@@ -52,6 +60,7 @@
             "status": "blasted",
             "statusDuration": 60,
             "speed": 3,
+            "lifetime": 150,
             "hitEffect": "explosion",
             "despawnEffect": "explosion"
         }
