@@ -32,6 +32,11 @@
     "reload": 180,
     "shootCone": 5,
     "rotateSpeed": 2,
+    "consumes": {
+        "coolant": {
+            "amount": 0.15
+        }
+    },
     "targetAir": false,
     "targetGround": true,
     "shootShake": 3.0,
