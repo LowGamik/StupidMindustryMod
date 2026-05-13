@@ -3,7 +3,7 @@
     "category": "turret",
     "name": "Stationary Artillery Cannon",
     "description": "A longrange artillery cannon that shoots powerfull AoE shells with slow fire rate.",
-    "health": 900,
+    "health": 350,
     "size": 2,
     "requirements": [
         {"item": "copper", "amount": 500},
@@ -32,6 +32,11 @@
     "reload": 180,
     "shootCone": 5,
     "rotateSpeed": 2,
+    "consumes": {
+        "coolant": {
+            "amount": 0.15
+        }
+    },
     "targetAir": false,
     "targetGround": true,
     "shootShake": 3.0,
