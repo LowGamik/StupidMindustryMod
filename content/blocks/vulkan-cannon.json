@@ -1,0 +1,18 @@
+{
+    "type": "ItemTurret",
+    "category": "turret",
+    "name": "Vulkan Cannon",
+    "description": "An anti-air cannon that can spew out more ammo then you can count",
+    "health": 900,
+    "size": 2,
+    "requirements":[
+        {"item": "copper", "amount": 400}
+    ],
+    "range": 180,
+    "reload": 5,
+    "shootCone": 2,
+    "targetAir": true,
+    "targetGround": true,
+    "alwaysUnlocked": true,
+    "maxAmmo": 100
+}
