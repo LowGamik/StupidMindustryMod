@@ -14,7 +14,6 @@
     "drawer": {
         "type": "DrawTurret",
         "base": "block-2",
-        "drawTurretTop": false,
         "parts":[
             {
                 "type": "RegionPart",

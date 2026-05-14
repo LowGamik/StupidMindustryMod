@@ -10,6 +10,17 @@
         {"item": "titanium", "amount": 150},
         {"item": "silicon", "amount": 100}
     ],
+    "drawer":{
+            "type": "DrawTurret",
+            "base": "block-2",
+            "parts":[{
+                "type": "RegionPart",
+                "suffix": "-turret",
+                "mirror": false,
+                "outline": true,
+                "y": 0
+            }]
+    },
     "range": 210,
     "reload": 10,
     "shoot":{
