@@ -6,13 +6,30 @@
     "health": 900,
     "size": 2,
     "requirements":[
-        {"item": "copper", "amount": 400}
+        {"item": "copper", "amount": 400},
+        {"item": "titanium", "amount": 150},
+        {"item": "silicon", "amount": 100}
     ],
-    "range": 180,
-    "reload": 5,
+    "range": 210,
+    "reload": 10,
+    "shoot":{
+        "shots": 5,
+        "shotDelay": 1
+    },
     "shootCone": 2,
     "targetAir": true,
     "targetGround": true,
     "alwaysUnlocked": true,
-    "maxAmmo": 100
+    "maxAmmo": 100,
+    "inaccuracy": 8,
+    "ammoTypes":{
+        "silicon":{
+            "type": "BasicBulletType",
+            "damage": 30,
+            "speed": 10,
+            "lifetime": 36,
+            "ammoMultiplier": 10,
+            "reloadMultiplier": 1.5
+        }
+    }
 }
